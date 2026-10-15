@@ -2,7 +2,6 @@
 
 MATLAB code and captured outputs for image-based analysis of a rotating/falling **samara** (winged seed). The supplied material contains scripts for background subtraction, projected-area tracking, descent/path tracking, rotational-speed estimation, coning-angle estimation, image-axis annotation, and supporting utilities.
 
-> **Important:** The supplied source material is preserved. The analysis documentation does not rewrite the original MATLAB logic.
 
 ## Analysis pipeline
 
