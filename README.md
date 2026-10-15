@@ -54,22 +54,6 @@ The supplied plot shows projected area in pixels against image number. The curve
 
 The supplied path plot shows the tracked samara in image coordinates. It is predominantly descending through the camera field, with a long diagonal segment and a narrower, mostly vertical portion with smaller lateral variations.
 
-## Calibration and reproducibility
-
-The source embeds experimental calibration constants including `0.00082`, `0.000857`, and `1057`. Their exact provenance and units are not fully documented in the source and should be verified before using derived velocity or RPM values quantitatively.
-
-The scripts also contain machine-specific Windows paths. These paths are preserved as supplied rather than silently changed.
-
-Before publication-quality use, verify:
-
-1. camera frame rate and the meaning of `1057`;
-2. pixel-to-metre calibration;
-3. background-frame validity;
-4. sensitivity to the background threshold;
-5. image-coordinate orientation;
-6. how many rotational events correspond to each detected area minimum;
-7. coning-angle geometry;
-8. MATLAB release/toolbox compatibility.
 
 ## Report
 
