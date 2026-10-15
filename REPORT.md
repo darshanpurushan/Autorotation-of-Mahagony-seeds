@@ -72,25 +72,7 @@ Adds a crop from an axis image to each PNG frame using fixed image coordinates a
 
 These are supplied experimental/reference assets and should be treated as source data rather than generated results.
 
-## 9. Implementation observations
 
-The source contains hard-coded Windows paths, different thresholds between versions, and legacy MATLAB functions such as `im2bw`. Some variants also call `flipud(I1);` without assigning its result and contain path constructions that should be checked for consistency between `files` and `files3`.
+## 9. Conclusion
 
-These are observations only; the original source was not edited.
-
-## 10. Recommended validation
-
-1. Confirm the camera frame rate and the meaning of `1057`.
-2. Document the pixel-to-metre calibration factors.
-3. Verify that the first frame is an appropriate background.
-4. Test threshold sensitivity.
-5. Overlay detected coordinates on sample masks.
-6. Confirm how many rotational events correspond to each area minimum.
-7. Compare RPM with an independent measurement if available.
-8. Validate the coning-angle geometry on representative frames.
-9. Record the MATLAB release and required toolboxes.
-10. Replace machine-specific paths with configuration variables only in a future cleaned-up version; the supplied files themselves should remain preserved.
-
-## 11. Conclusion
-
-The supplied project forms an image-based experimental workflow for a rotating/falling samara: isolate the seed, measure projected area and image coordinates, and use those signals to infer descent, rotation, and coning behaviour. The strongest directly visible result is the oscillatory projected-area signal coupled with a descending image-space trajectory. Quantitative velocity, RPM, and coning results remain calibration-dependent until the constants, timing, coordinate conventions, and landmark assumptions are independently verified.
+The project forms an image-based experimental workflow for a rotating/falling samara: isolate the seed, measure projected area and image coordinates, and use those signals to infer descent, rotation, and coning behaviour. The strongest directly visible result is the oscillatory projected-area signal coupled with a descending image-space trajectory. Quantitative velocity, RPM, and coning results remain calibration-dependent until the constants, timing, coordinate conventions, and landmark assumptions are independently verified.
